@@ -5,10 +5,12 @@ services:
     volumes:
       - ./:/app
     ports:
-      - "3000:3000"
+      - "5000:5000"
     links:
       - mariadb
-  mongo:
+  mariadb:
+    environment:
+      - MYSQL_ROOT_PASSWORD=123456
     image: mariadb
     ports:
-      - "27017:27017"
+      - "3306:3306"
