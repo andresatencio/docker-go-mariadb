@@ -1,0 +1,1 @@
+Boilerplate code for go lang projects
